@@ -1,4 +1,4 @@
-```# Spark History on DC/OS 
+# Spark History on DC/OS 
 The [Apache Spark History Server](https://spark.apache.org/docs/latest/monitoring.html) allows you to view the state of running and completed Spark jobs. This project allows for users to run any form of distributed filesystem as the underlying storage instead of the default HDFS. Prefeably the FS would be available across all Private Agents on the cluster that Spark runs its jobs. We are also using the default Spark container provided by Mesosphere so that it matches the version of Spark being run on the cluster. This will need to be periodically updated as needed.
 
 You can access the UI at: https://DCOS-URL/service/spark-history
