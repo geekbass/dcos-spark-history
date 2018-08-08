@@ -19,8 +19,8 @@
       "type": "DOCKER",
       "volumes": [
         {
-          "containerPath": "/FS/YOU/CREATED/ABOVE",
-          "hostPath": "/FS/YOU/CREATED/ABOVE",
+          "containerPath": "/FS/YOU/CREATED",
+          "hostPath": "/FS/YOU/CREATED",
           "mode": "RW"
         }
       ],
@@ -35,7 +35,7 @@
     "disk": 0,
     "env": {
       "SPARK_USER": "root",
-      "SPARK_HISTORY_OPTS": "-Dspark.history.fs.logDirectory=/FS/YOU/CREATED/ABOVE -Dspark.history.fs.cleaner.enabled=true -Dspark.history.fs.cleaner.interval=1d -Dspark.history.fs.cleaner.maxAge=7d",
+      "SPARK_HISTORY_OPTS": "-Dspark.history.fs.logDirectory=/FS/YOU/CREATED -Dspark.history.fs.cleaner.enabled=true -Dspark.history.fs.cleaner.interval=1d -Dspark.history.fs.cleaner.maxAge=7d",
       "APPLICATION_WEB_PROXY_BASE": "/service/spark-history"
     },
     "healthChecks": [
