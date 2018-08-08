@@ -22,7 +22,7 @@ Append the following in your Spark Submit to log to History Server
 --conf spark.mesos.executor.docker.volumes=/HOST/FS/PATH/YOU/CREATED:/CONTAINER/PATH/SAME/AS/HOST/PATH:rw #Mount host volume under container to write the logs
 ```
 
-NOTE: The 'spark.mesos.executor.docker.volumes' is important. If you dont mount the Host volume into the container launched by the Spark Dispatcher will not see the volume. You will see an error about the filesystem not existing. 
+NOTE: The 'spark.mesos.executor.docker.volumes' is important. If you dont mount the Host volume into the container launched it not see the volume. You will see an error about the filesystem not existing. 
 
 Example using the DC/OS CLI:
 ```sh
